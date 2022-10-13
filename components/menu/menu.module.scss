@@ -1,0 +1,34 @@
+.menu {
+  width: 86px;
+  flex-shrink: 0;
+
+  ul {
+    list-style: none;
+    padding: 0%;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      padding: 16px 0;
+      border-bottom: 1px solid #9e9e9e30;
+
+      &:hover {
+        // color: #9e9e9e;
+        color: var(--secondary-color);
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 12px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--secondary-color);
+}

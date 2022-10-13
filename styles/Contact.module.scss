@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 48px;
+  line-height: 1.7;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .emailLink {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 6px 22px;
+  }
+}
