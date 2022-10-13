@@ -7,6 +7,7 @@ import editorImage from '../public/editor.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faGithub } from "@fortawesome/free-brands-svg-icons"
 import {  faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+import imageLoader from "../loader";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
           <div className={styles.card}>
             <h2>Editor</h2>
             <p>A minimal, dark editor designed to quickly visualize HTML template.</p>
-            <Image src={editorImage} alt="Editor"/>
+              <Image loader={imageLoader} src={editorImage} alt="Editor"/>
             <div className={styles.footer}>
               <span>Angular / Sass / VS Code</span>
               <span className={styles.icons}>

@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/gh-pages',
+//  basePath: '/personal-site',
   reactStrictMode: true,
   images: {
     domains: ['via.placeholder.com'],
+    loader: "custom"
   },
 }
 

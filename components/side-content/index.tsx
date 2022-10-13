@@ -8,12 +8,13 @@ import {
   faGithubSquare
 } from "@fortawesome/free-brands-svg-icons";
 import profilePhoto from "../../public/profile-photo.jpeg";
+import imageLoader from "../../loader";
 
 export default function SideContent({ children }: any) {
   return (
     <div className={styles.sideContent}>
       <div className={styles.avatar}>
-        <Image src={profilePhoto} alt="Avatar" width={180} height={180}></Image>
+          <Image loader={imageLoader} src={profilePhoto} alt="Avatar" width={180} height={180}></Image>
       </div>
 
       <div className={styles.profile}>
